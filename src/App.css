@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.home-hero h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #1a1a2e;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+}
+
+.stat-card h3 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a1a2e;
+}
+
+.filters {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.filters select {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.product-container {
+  padding: 20px 30px;
+}
+
+.product-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+
+.total-info {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product-content h2 {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.product-content span {
+  color: #888;
+  font-size: 14px;
+}
+
+.department {
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 5px;
+  width: fit-content;
+}
+
+.badge.available {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge.maintenance {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.card-actions {
+  margin-top: 10px;
+}
+
+.card-actions button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1a1a2e;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.card-actions button:hover {
+  background-color: #16213e;
+}
+
+.maintenance-text {
+  color: #721c24;
+  font-weight: bold;
+}
+
+.view-detail-btn {
+  margin-top: 10px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0f3460;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+.view-detail-btn:hover {
+  background-color: #16213e;
+}
+
+.no-products {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.employee-detail {
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.employee-detail > a > button {
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1a1a2e;
+  color: white;
+  cursor: pointer;
+}
+
+.detail-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-card h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1a1a2e;
+}
+
+.detail-card p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.hours-counter {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hours-counter h3 {
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.counter-controls button {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1a1a2e;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.counter-controls button:hover {
+  background-color: #16213e;
+}
+
+.counter-controls span {
+  font-size: 24px;
+  font-weight: bold;
+  min-width: 40px;
+  text-align: center;
+}
+
+.total-rent {
+  margin-top: 10px;
+  font-size: 18px;
+}
